@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/* Quando usar o id é igual a # 
+ e o id é para ser usado em um elemento*/
+/* Quando usar o class é igual a . 
+e o class pode ser usado em vários elemetos*/
+
+
+body{
+    background-color: rgb(164, 214, 255);
+    font-family:Arial, Helvetica, sans-serif ;
+    margin: 0;
+    padding: 0;
+}
+
+h1#principal{
+    text-align: center;
+    background-color: azure;
+    margin: 0;
+    padding: 10px;
+}
+
+hr{
+    margin-top: 0px;
+}
+
+h2{
+    margin: 8px;
+}
+
+h3{
+    margin: 8px;
+}
+
+.basico{
+    color: green;
+}
+
+.intermediario{
+    color: rgb(255, 255, 0);
+    font-weight: bolder;
+}
+
+.avancado{
+    color: red;
+}
+
+.fundo{
+    background-image:linear-gradient(to bottom, white, rgb(202, 221, 255));
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.texto{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+    text-indent: 5px;
+    margin: 8px;
+}
+

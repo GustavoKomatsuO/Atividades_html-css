@@ -1,0 +1,209 @@
+/* O  @import usei para pegar a font Bebas Neue*/
+
+/* O :root é para fazer variaveis em CSS, e para usar tem que color -- e depois o nome da variavel, : e ; para fechar*/
+
+/* O transition-duration é para fazer uma animaçãozinha nos botões ou links */
+
+/* Para deixar uma imagem responsiva deixe o local com um min e max width, o min-width serve para que a imagem não quebre ou fique ilegível em telas muito pequenas dizzenddo ao navegador: "Você pode encolher este elemento o quanto precisar, mas não deixe ele ficar menor do que isso". Enquanto no max-width diz ao navegador: "Você pode esticar este elemento o quanto quiser, mas pare quando ele atingir este tamanho".
+
+Mas para realmente funcionar deixe a img no CSS com width de 100% e o seu background com min-width e max-width de acordo com o tamanho que deseja, que no caso meu background era o main, e não esquecer de usar o margin: auto; e colocar height: auto; para a imagemficar no tamanho original
+*/ 
+
+/* No backgrouns-image: linear-gradient() usei o transparent para fzaer um efeito de sumindo no background de h2 do article no main */
+
+/* Para deixar centralizado o nav é so usar o text-align: center; dentro do nav (nao no nav > a)*/
+
+/* o list-style-position: inside; é para deixar as bolinhas da list (ul) para dentro do aside */
+
+/* e o list-style-type é para colocar um emoji na bolinha do ul (não funciona em todos os navegadores) */
+
+/* e o column é para dividir o ul em 2 colunas, so isso */
+
+
+
+/* Geral */
+
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf) format('opentype');
+}
+
+:root {
+    --cor-neutra-clara: #ffffffe4;
+    --cor-neutra-escura: #00521f;
+    --cor-marca-viva: #219453;
+    --cor-marca-contraste: #0c5701;
+    --cor-marca-suave: #90deb7;
+    --cor-background-body: #041700;
+
+    --fonte_padrao : Arial, Verdana, Helvetica, sans-serif;
+
+    --fonte-droid : 'idroid', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+     background-color:var(--cor-background-body);
+     font-family: var(--fonte_padrao);
+}
+
+a{
+    color:var(--cor-neutra-escura);
+    text-decoration: underline;
+    font-weight: bolder;
+
+}
+
+a:active{
+    color: var(--cor-marca-suave);
+    transition-duration: 0.3s;
+}
+/* header e nav */
+header{
+    background-image: linear-gradient(to bottom, var(--cor-marca-viva), var(--cor-neutra-escura));
+    min-height: 150px;
+
+    padding-top: 30px;
+    text-align: center;
+}
+
+header h1{
+    color: var(--cor-neutra-clara);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.913);
+    font-family:'Bebas Neue', cursive;
+    font-size: 3rem;
+}
+
+header p{
+    color: var(--cor-neutra-clara);
+    font-size: 1.2rem;
+    max-width: 500px;
+    margin: auto;
+}
+
+nav{
+    background-color: var(--cor-neutra-escura);
+    padding: 10px;
+}
+
+nav a{
+    color: var(--cor-marca-suave);
+    padding: 10px;
+    transition-duration: 0.5s;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: var(--cor-marca-viva);
+    color: var(--cor-neutra-clara);
+}
+
+nav a:active{
+    color: var(--cor-background-body);
+}
+
+/* main, article, aside*/
+main{
+    background-color: var(--cor-neutra-clara);
+    box-shadow: 0px 0px 40px rgb(0, 0, 0);
+    border-radius: 0px 0px 20px 20px;
+
+    padding: 20px;
+    max-width: 820px;
+    min-width: 320px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+article h1,h2,h3,p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+main h1{
+    color: var(--cor-marca-contraste);
+    font-family: var(--fonte-droid);
+}
+
+main h2{
+    background-image: linear-gradient(to right, var(--cor-marca-suave), transparent);
+    color: var(--cor-marca-contraste);
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-family: var(--fonte-droid);
+
+}
+
+main p{
+    text-indent: 10px;
+    text-align: justify;
+}
+
+main img.bugdroid_pqn{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main img{
+    width: 100%;
+}
+
+main iframe{
+    display: block;
+    background-color: var(--cor-marca-contraste);
+    box-shadow: 0px 5px 10px black;
+
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+aside{
+    background-color: var(--cor-marca-suave);
+    border-radius: 10px;
+    border: 0.5px solid var(--cor-background-body);
+    margin-top: 15px;
+}
+
+aside h3{
+    background-color: var(--cor-marca-viva);
+    border-bottom: 0.5px solid var(--cor-background-body);
+    color: var(--cor-neutra-clara);
+    border-radius: 10px 10px 0px 0px;
+    padding-left: 20px;
+}
+
+aside p{
+    text-align: justify;
+    padding: 10px;
+}
+
+aside ul{
+    list-style-type: '\1F5F8';
+    list-style-position: inside;
+    columns: 2;
+    padding: 10px;
+}
+
+aside a:active{
+    color: var(--cor-neutra-clara);
+}
+
+/* footer */
+footer{
+    background-color: var(--cor-marca-contraste);
+    color: var(--cor-neutra-clara);
+
+    text-align: center;
+    font-size: 16px;
+}

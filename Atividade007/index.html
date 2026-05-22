@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Dinâmica e Áudios</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica :</h1>
+    <hr>
+    <p>Vamo testar para ver se funciona</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagem/pequeno.png" >
+        <source media="(max-width: 1050px)" srcset="Imagem/medio.png" >
+        <img src="Imagem/grande.png" alt="img_grande">
+    </picture>
+    <hr>
+    <h1>Reproduzindo Áudios :</h1>
+    <hr>
+    <p>Escuta o áudio ai</p>
+    <audio src="musica.mp3"  controls loop ></audio>
+    <!--a tag <audio> so funciona com formato MP3, WAVE e OGG -->
+    <!--o controls serve para você controlar o audio -->
+    <!--o loop serve pra reptir o audio quando acabar -->
+</body>
+</html>

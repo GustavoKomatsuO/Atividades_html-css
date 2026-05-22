@@ -1,0 +1,191 @@
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf) format('opentype');
+}
+
+/* Geral */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(1, 10, 0);
+}
+
+h2{
+    color:#123c23 ;
+    font-family: 'idroid';
+    padding-bottom: 20px;
+}
+
+.h3_section{
+    font-family: 'idroid';
+    font-size: 18px;
+    color: #123c23;
+    background-image: linear-gradient(to right,#59BF72,white);
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p{
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.a_section{
+    padding:0px;
+    color: #107a00;
+    text-decoration: none;
+}
+
+a:active{
+    color: #4bde94;
+}
+
+img {
+    max-width: 100%; 
+    display: block; 
+    margin: auto;
+    padding-bottom: 20px; 
+}
+
+/* Cabeçario */
+header{
+    background-image: linear-gradient(to bottom, #2ac06b 25% ,#05421D);
+    min-height: 150px;
+}
+
+h1#titulo{
+     font-family: 'Bebas Neue',  sans-serif;
+     color: whitesmoke;
+     text-align: center;
+     font-size: 50px;
+     padding: 20px;
+}
+h3#cabecalho{
+     color: whitesmoke;
+     text-align: center;
+     font-size: 18px;
+     margin : auto;
+}
+
+nav{
+    padding: 40px 8px;
+}
+
+.link_nav{
+    color: #90deb7;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 2px 10px;
+    margin: auto;
+}
+
+.link_nav:hover{
+    background-color: #32a263;
+    color: #124e2b ;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Inicio Main */
+main{
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    margin: auto;
+    padding: 15px;
+    width: 80%;
+    height: auto;
+}
+
+/* Historia do mascote android */
+
+a.historia{
+    padding:0px;
+    color: #107a00;
+    text-decoration: none;
+}
+
+
+/* A primeira versão */
+
+picture{
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+}
+
+a:active{
+    color: #4bde94;
+}
+
+
+
+/* Surge um novo mascote */
+
+iframe{
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    width: 100%;           
+    max-width: 600px;       
+    aspect-ratio: 16 / 9;   
+    background-color: #003f13;
+    padding: 20px;          
+    border: none;           
+    box-sizing: border-box;
+}
+
+/* Quer aprender mais */
+
+#ultima_section{
+    background-color:#90deb7;
+    border-radius: 10px;
+    min-height: 420px;
+}
+
+#h3{
+    background-color:#2ac06b;
+    color:#d3ffe9;
+    border-radius: 10px 10px 0px 0px;
+    padding: 7px;
+    font-size: 17px;
+}
+
+.p_versoesDroid{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10PX;
+    text-align: justify;
+}
+
+.versoes_droid{
+    columns: 2;
+    column-gap: 10px;
+}
+
+.versoes_droid > a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+aside{
+    margin-top: 10px;
+}
+
+footer{
+    background-color: #003f13;
+    margin-top: 20px;
+    min-height: 30px;
+}
+
+h4{
+    color: #9fc3b0;
+    text-align: center;
+    padding: 5px;
+}

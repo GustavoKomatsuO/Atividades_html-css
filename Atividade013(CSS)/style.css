@@ -1,0 +1,60 @@
+/* 
+    #   = id
+    .   = class
+    :   = pseudo-class
+    ::  = pseudo-element
+    >   = children/ o que ta dentro
+          (ex div(pai) > p(p é a criança/children e está dentro de div)
+*/
+
+.div_cima{
+    display: inline-block;
+    background-color: lightgray;
+    border: 1px solid black;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+
+div:hover{
+    background-color: burlywood;
+    width: 90px;
+}
+
+#teste:hover{
+    background-color: aliceblue;
+    width: 100px;
+}
+#teste > p{
+    display: none;
+}
+
+#teste:hover > p{
+    background-color: burlywood;
+    text-align: center;
+    display: block
+}
+
+a{
+    color: rgb(144, 144, 255);
+    text-decoration: none;
+}
+
+a:visited{
+    color: rgb(0, 34, 255);
+}
+
+a:hover{
+    color: black;
+}
+
+a:active{
+    color: rgb(158, 4, 158);
+}
+
+/* Misturei class junto com o :: */
+.youtube::after{
+    content: ' (YouTube)';
+    color: rgba(255, 0, 0, 0.583);
+}
+
