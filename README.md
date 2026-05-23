@@ -14,7 +14,7 @@ Estudo de HTML5 e CSS3 Curso em Video
     <li><a href="Exercicios/Atividade008/">Atividade008(HTML)</a></li>
     <li><a href="Exercicios/Atividade009(CSS)/">Atividade009(CSS)</a></li>
     <li><a href="Exercicios/Atividade010(CSS)/">Atividade010(CSS)</a></li>
-    <li><a href="Exercicios/Atividade011(CSS)/">Atividade011(CSS)</a></li>
+    <li><a href="Exercicios/Atividade011(CSS)/cor2.html">Atividade011(CSS)</a></li>
     <li><a href="Exercicios/Atividade012(CSS)/">Atividade012(CSS)</a></li>
     <li><a href="Exercicios/Atividade013(CSS)/">Atividade013(CSS)</a></li>
     <li><a href="Exercicios/Atividade014(CSS)/">Atividade014(CSS)</a></li>
