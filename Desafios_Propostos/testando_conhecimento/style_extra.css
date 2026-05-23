@@ -5,16 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
-    --cor-neutra-clara: #ffffff;       /* Um branco levemente azulado para o fundo do <main> */
-    --cor-neutra-escura: #003566;      /* Azul profundo para o fundo do <nav> e subtítulos */
-    --cor-marca-viva: #0077b6;         /* O azul clássico do Bluetooth para o topo do <header> */
-    --cor-marca-contraste: #03045e;    /* O azul mais escuro de todos para o <footer > e títulos principais */
-    --cor-marca-suave: #caf0f8;        /* Azul glacial/gelo para o fundo do <aside> e efeitos */
-    --cor-background-body: #0b0c10;    /* Quase preto, para dar destaque ao site */
+    --cor-neutra-clara: #ffffff;     
+    --cor-neutra-escura: #003566;     
+    --cor-marca-viva: #0077b6;       
+    --cor-marca-contraste: #03045e;    
+    --cor-marca-suave: #caf0f8;       
+    --cor-background-body: #0b0c10;    
 
     --fonte_padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte_header: 'Bebas Neue', cursive;
-    --fonte-titulo: 'Cinzel', serif;  /* Fonte forte para os títulos */
+    --fonte-titulo: 'Cinzel', serif; 
 }
 
 *{
@@ -120,7 +120,8 @@ article div.borda_img_vid{
 article iframe{
     display: block;
     margin: auto;
-    width: 70%;
+    width: 80%;
+    min-height: 400px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
