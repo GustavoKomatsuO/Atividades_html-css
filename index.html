@@ -26,10 +26,11 @@
      font-family: Arial, Helvetica, sans-serif;
     }
 
+    /* O clamp ajusta do mínimo (ex: 20px) até o seu tamanho ideal (30px) dependendo da tela */
     header{
         background-color: black;
         padding: 10px;
-        font-size: 30px;
+        font-size: clamp(20px, 5vw, 30px); 
         border-bottom:1px solid gray;
         margin-bottom: 50px;
     }
@@ -41,21 +42,24 @@
         transition-duration: 0.5s;
     }
 
+    /* Mantém o seu efeito de 80px, mas não deixa vazar em telas de celular */
     header h1:hover{
-        font-size: 80px;
+        font-size: clamp(40px, 12vw, 80px);
         font-weight: bold;
         text-decoration: underline;
     }
 
     header p{
         text-align: center;
-        font-size: 25px;
+        font-size: clamp(16px, 4vw, 25px); /* Chega nos seus 25px em monitores */
+        margin-top: 10px;
     }
 
     header strong{
         padding:5px;
         transition-duration: 0.8s;
         border-radius: 5px;
+        display: inline-block;
     }
 
     header strong.html:hover{
@@ -71,12 +75,15 @@
     section{
         position: relative;
         border-radius: 5px;
-        padding: 50px;
-        padding-top: 40px;
-        width: 500px;
-        margin: auto;
-        margin-top: 30px;
+        padding: 40px 20px 30px 20px;
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto 50px auto;
         border: 1px solid whitesmoke;
+    }
+
+    section h2 strong{
+        font-size: larger;
     }
 
     section#html{
@@ -85,67 +92,51 @@
 
     section#css{
         background-color: var(--cor_css);
-        margin-bottom: 40px;
     }
 
-    section#html h2{
-        border-radius: 10px 0px 0px 10px;
+    section h2 {
+        display: flex;
+        align-items: center;
+        gap: 10px; 
+        border-radius: 10px;
         position: absolute;
         top: 0; 
         transform: translateY(-50%);
         background-color: #1c1b1b; 
-        padding-left: 11px;
-        padding-right: 1px;
+        padding: 5px 15px;
+        left: 20px;
+        white-space: nowrap;
     }
 
-
-    section#css h2{
-       border-radius: 10px 0px 0px 10px;
-        position: absolute;
-        top: 0; 
-        transform: translateY(-50%);
-        background-color: #1c1b1b; 
-        padding-left: 11px;
-        padding-right: 1px;
+    section h2 img {
+        width: 30px;  
+        height: 30px;
+        object-fit: contain;
     }
 
     section strong{
-        font-size: 29px;
+        font-size: inherit; 
     }
 
-    section#html img{
-        border-radius: 0px 0px 10px 0px;
-        width: 40px;
-        position: absolute;
-        top: 0;
-        transform: translateY(-49%);
-        right: 38%;
-        background-color: #1c1b1b;
+    article ul {
+        list-style-position: inside;
     }
 
-    section#css img{
-        border-radius: 0px 0px 10px 0px;
-        width: 40px;
-        position: absolute;
-        top: 0;
-        transform: translateY(-49%);
-        left: 240px;
-        background-color: #1c1b1b;
+    article li {
+        margin-bottom: 8px;
     }
-
-
-
+    
     article#html a,
     article#css a {
         text-decoration: none;
-        font-size: large;
+        font-size: 1.1rem;
         color: var(--cor_fonte);
-        text-align:justify;
         transition-duration: 0.4s;
+        word-break: break-word;
     }
 
     article#html a:visited{
-        color:var(--cor_css);
+        color: var(--cor_css);
     }
 
     article#css a:visited{
@@ -154,13 +145,11 @@
 
     article#html a.atvHtml:hover{
         text-shadow: 0px 0px 4px black;
-        text-decoration:none;
         color: #F16A30;
     }
 
     article#css a.atvCss:hover{
         text-shadow: 0px 0px 4px black;
-        text-decoration:none;
         color: var(--cor_css_claro);
     }
 
@@ -171,9 +160,14 @@
 
     footer{
         background-color: black;
-        padding: 10px;
+        padding: 15px;
         text-align: center;
         border-top: 1px solid gray;
+        margin-top: 40px;
+    }
+    
+    footer p {
+        font-size: 16px;
     }
     </style>
 </head>
@@ -186,8 +180,10 @@
 
 <main>
     <section id="html">
-        <h2>Atividade <strong>HTML</strong></h2>
-        <img src="imagens/logo-html-5-256.png" alt="logo-html-5-256">
+        <h2>
+            Atividade <strong>HTML</strong>
+            <img src="imagens/logo-html-5-256.png" alt="HTML5">
+        </h2>
         <article id="html">
             <ul>
                 <li><a class="atvHtml" href="Exercicios/Atividade001/index.html">Atividade001(HTML)</a></li>
@@ -204,15 +200,19 @@
     </section>
 
     <section id="css">
-        <h2>Atividade <strong>CSS</strong></h2>
-        <img src="imagens/logo-css-3-256.png" alt="">
+        <h2>
+            Atividade <strong>CSS</strong>
+            <img src="imagens/logo-css-3-256.png" alt="CSS3">
+        </h2>
         <article id="css">
-               <li><a class="atvCss"   href="Exercicios/Atividade009(CSS)/">Atividade009(CSS)</a></li>
+            <ul>
+                <li><a class="atvCss"   href="Exercicios/Atividade009(CSS)/">Atividade009(CSS)</a></li>
                 <li><a class="atvCss" href="Exercicios/Atividade010(CSS)/">Atividade010(CSS)</a></li>
                 <li><a class="atvCss" href="Exercicios/Atividade011(CSS)/cor2.html">Atividade011(CSS)</a></li>
                 <li><a class="atvCss" href="Exercicios/Atividade012(CSS)/">Atividade012(CSS)</a></li>
                 <li><a class="atvCss" href="Exercicios/Atividade013(CSS)/">Atividade013(CSS)</a></li>
                 <li><a class="atvCss" href="Exercicios/Atividade014(CSS)/">Atividade014(CSS)</a></li>
+            </ul>
         </article>
     </section>
 
