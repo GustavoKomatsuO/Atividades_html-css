@@ -1,102 +1,213 @@
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
- --cor_fonte: #ECECEC;
- --cor_html: #E5532D;
- --cor_css: #2D53E5;
- --cor_css_claro: #306AF1;
-}
+    :root{
+     --cor_fonte: #ECECEC;
+     --cor_html: #E5532D;
+     --cor_css: #2D53E5;
+     --cor_css_claro: #306AF1;
+    }
 
-*{
-    margin: 0;
-    padding: 0;
-}
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-header h1{
-    text-align: center;
-     font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-    transition-duration: 0.5s;
-}
+    body{
+     background-color: #1c1b1b;
+     color: var(--cor_fonte);
+     font-family: Arial, Helvetica, sans-serif;
+    }
 
-header h1:hover{
-    font-size: 50px;
-    font-weight: bold;
-    text-decoration: underline;
-}
+    header{
+        background-color: black;
+        padding: 10px;
+        font-size: 30px;
+        border-bottom:1px solid gray;
+        margin-bottom: 50px;
+    }
 
-header p{
-    text-align: center;
-}
+    header h1{
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        transition-duration: 0.5s;
+    }
 
-header strong{
-    padding:5px;
-    transition-duration: 0.8s;
-    border-radius: 5px;
-}
+    header h1:hover{
+        font-size: 80px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
 
-header strong.html:hover{
-    background-color: var(--cor_html);
-    color: var(--cor_fonte);
-}
+    header p{
+        text-align: center;
+        font-size: 25px;
+    }
 
-header strong.css:hover{
-    background-color: var(--cor_css);
-    color: var(--cor_fonte);
-}
+    header strong{
+        padding:5px;
+        transition-duration: 0.8s;
+        border-radius: 5px;
+    }
 
-section h2{
-    padding-left: 5px;
-}
+    header strong.html:hover{
+        background-color: var(--cor_html);
+        color: var(--cor_fonte);
+    }
 
-article a{
-    color: #8BB0E6;
-    text-align:justify;
-    transition-duration: 0.4s;
-}
+    header strong.css:hover{
+        background-color: var(--cor_css);
+        color: var(--cor_fonte);
+    }
 
-article a:visited{
-    color: purple;
-}
+    section{
+        position: relative;
+        border-radius: 5px;
+        padding: 50px;
+        padding-top: 40px;
+        width: 500px;
+        margin: auto;
+        margin-top: 30px;
+        border: 1px solid whitesmoke;
+    }
 
-article a.atvHtml:hover{
-    text-decoration:none;
-    color: var(--cor_html);
-}
+    section#html{
+        background-color: var(--cor_html);
+    }
 
-article a.atvCss:hover{
-    text-decoration:none;
-    color: var(--cor_css_claro);
-}
+    section#css{
+        background-color: var(--cor_css);
+        margin-bottom: 40px;
+    }
 
-article a:active,
-article a.atvHtml:active,
-article a.atvCss:active {
-    color: var(--cor_fonte);
-}
-</style>
+    section#html h2{
+        border-radius: 10px 0px 0px 10px;
+        position: absolute;
+        top: 0; 
+        transform: translateY(-50%);
+        background-color: #1c1b1b; 
+        padding-left: 11px;
+        padding-right: 1px;
+    }
+
+
+    section#css h2{
+       border-radius: 10px 0px 0px 10px;
+        position: absolute;
+        top: 0; 
+        transform: translateY(-50%);
+        background-color: #1c1b1b; 
+        padding-left: 11px;
+        padding-right: 1px;
+    }
+
+    section strong{
+        font-size: 29px;
+    }
+
+    section#html img{
+        border-radius: 0px 0px 10px 0px;
+        width: 40px;
+        position: absolute;
+        top: 0;
+        transform: translateY(-49%);
+        right: 38%;
+        background-color: #1c1b1b;
+    }
+
+    section#css img{
+        border-radius: 0px 0px 10px 0px;
+        width: 40px;
+        position: absolute;
+        top: 0;
+        transform: translateY(-49%);
+        left: 240px;
+        background-color: #1c1b1b;
+    }
+
+
+
+    article#html a,
+    article#css a {
+        text-decoration: none;
+        font-size: large;
+        color: var(--cor_fonte);
+        text-align:justify;
+        transition-duration: 0.4s;
+    }
+
+    article#html a:visited{
+        color:var(--cor_css);
+    }
+
+    article#css a:visited{
+        color: var(--cor_html);
+    }
+
+    article#html a.atvHtml:hover{
+        text-shadow: 0px 0px 4px black;
+        text-decoration:none;
+        color: #F16A30;
+    }
+
+    article#css a.atvCss:hover{
+        text-shadow: 0px 0px 4px black;
+        text-decoration:none;
+        color: var(--cor_css_claro);
+    }
+
+    article#html a.atvHtml:active,
+    article#css a.atvCss:active {
+        color: var(--cor_fonte);
+    }
+
+    footer{
+        background-color: black;
+        padding: 10px;
+        text-align: center;
+        border-top: 1px solid gray;
+    }
+    </style>
+</head>
+<body>
 
 <header>
     <h1>Atividades</h1>
-    <p>Estudo de <strong class="html">HTML5</strong> e <strong class="css">CSS3</strong > Curso em Video </p>
+    <p>Estudo de <strong class="html">HTML5</strong> e <strong class="css">CSS3</strong> Curso em Video </p>
 </header>
 
 <main>
-    <section>
-    <h2>Exercicios :</h2>
-        <article>
+    <section id="html">
+        <h2>Atividade <strong>HTML</strong></h2>
+        <img src="imagens/logo-html-5-256.png" alt="logo-html-5-256">
+        <article id="html">
             <ul>
                 <li><a class="atvHtml" href="Exercicios/Atividade001/index.html">Atividade001(HTML)</a></li>
                 <li><a class="atvHtml"  href="Exercicios/Atividade002/">Atividade002(HTML)</a></li>
                 <li><a class="atvHtml"  href="Exercicios/Atividade003/">Atividade003(HTML)</a></li>
                 <li><a class="atvHtml"  href="Exercicios/Atividade004/">Atividade004(HTML)</a></li>
-                 <li><a class="atvHtml"  href="Exercicios/Atividade004_parte2/">Atividade004_parte2(HTML)</a></li>
+                <li><a class="atvHtml"  href="Exercicios/Atividade004_parte2/">Atividade004_parte2(HTML)</a></li>
                 <li><a class="atvHtml"  href="Exercicios/Atividade005/">Atividade005(HTML)</a></li>
                 <li><a class="atvHtml"  href="Exercicios/Atividade006/">Atividade006(HTML)</a></li>
                 <li><a class="atvHtml"  href="Exercicios/Atividade007/">Atividade007(HTML)</a></li>
                 <li><a class="atvHtml"  href="Exercicios/Atividade008/">Atividade008(HTML)</a></li>
-                <li><a class="atvCss"  href="Exercicios/Atividade009(CSS)/">Atividade009(CSS)</a></li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="css">
+        <h2>Atividade <strong>CSS</strong></h2>
+        <img src="imagens/logo-css-3-256.png" alt="">
+        <article id="css">
+               <li><a class="atvCss"   href="Exercicios/Atividade009(CSS)/">Atividade009(CSS)</a></li>
                 <li><a class="atvCss" href="Exercicios/Atividade010(CSS)/">Atividade010(CSS)</a></li>
                 <li><a class="atvCss" href="Exercicios/Atividade011(CSS)/cor2.html">Atividade011(CSS)</a></li>
                 <li><a class="atvCss" href="Exercicios/Atividade012(CSS)/">Atividade012(CSS)</a></li>
@@ -104,5 +215,8 @@ article a.atvCss:active {
                 <li><a class="atvCss" href="Exercicios/Atividade014(CSS)/">Atividade014(CSS)</a></li>
         </article>
     </section>
+
+    <footer><p>Exercicios terminados que eu fiz</p></footer>
 </main>
-</ul>
+</body>
+</html>
