@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+}
+
+div.quadrado{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+
+.quadrado p{
+    color: white;
+    text-align: center;
+    padding-top: 85px;
+}
+
+.quadrado#cor_normal{
+    background-color:chocolate;
+}
+
+.quadrado#imagem{
+    background-image: url(imagens/pattern004.png);
+}
+
+.quadrado#gradient{
+    background-image: linear-gradient(to top, black, transparent);
+}
