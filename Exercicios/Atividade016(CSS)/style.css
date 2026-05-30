@@ -10,7 +10,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    background-attachment: fixed;
 }
 
 main{
@@ -22,8 +22,10 @@ main{
 
 section{
     background-color: white;
+    max-height: 250px;
+    overflow:auto;
     border: 1px solid black;
-    border-radius: 25px;
+    border-radius: 25px 0px 0px 25px;
     width: 90%;
     max-width: 500px;
     padding: 10px;
